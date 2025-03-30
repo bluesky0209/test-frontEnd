@@ -10,6 +10,10 @@ export default defineNuxtConfig({
     port: 3334,
     host: '0.0.0.0'
   },
+  server: {
+    host: '0.0.0.0', // Required for docker setups
+    port: 3334       // Should match devServer port
+  },
 
   modules: [
     "@nuxt/content",
